@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="দীপাবলির ইতিহাস, বাংলার ঐতিহ্য ও বাংলাদেশের দীপাবলি নিয়ে বাংলা ডিজিটাল ইতিহাস জাদুঘর।">
+  <title>Beyond the Lights — দীপাবলির ইতিহাস</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="progress"></div>
+  <nav>
+    <a class="logo" href="#home">BEYOND THE LIGHTS</a>
+    <button class="menu" id="menuButton" aria-label="মেনু খুলুন">☰</button>
+    <div class="navlinks" id="navlinks">
+      <a href="#meaning">পরিচয়</a><a href="#stories">কাহিনি</a>
+      <a href="#bengal">বাংলা</a><a href="#bangladesh">বাংলাদেশ</a>
+      <a href="#world">মানচিত্র</a><a href="#sources">তথ্যসূত্র</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">A DIGITAL HISTORY EXPERIENCE</div>
+      <h1>আলোর ওপারে</h1>
+      <h2 class="hero-en">BEYOND THE LIGHTS</h2>
+      <p>একটি প্রদীপ থেকে শুরু হওয়া যাত্রা। ধর্মীয় বিশ্বাস, প্রাচীন কাহিনি, আঞ্চলিক সংস্কৃতি, ইতিহাস এবং মানবতার গল্প।</p>
+      <a class="btn" href="#meaning">ইতিহাসের যাত্রা শুরু করুন →</a>
+      <div class="scroll-note">SCROLL TO DISCOVER · ↓</div>
+    </div>
+  </header>
+
+  <main id="chapters">
+    <div class="loading">ইতিহাসের অধ্যায়গুলো প্রস্তুত হচ্ছে…</div>
+  </main>
+
+  <footer>
+    <div class="eyebrow">A JOURNEY THROUGH HISTORY & HUMANITY</div>
+    <h2>BE THE LIGHT.</h2>
+    <p>অনেক গল্প। এক মানবতা।</p>
+    <a href="#home" class="btn">শুরুতে ফিরে যান ↑</a>
+    <p class="small footer-note">Beyond the Lights · Digital History Experience</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data/places.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -93,3 +93,279 @@ footer h2{letter-spacing:3px}
  *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
  .reveal{opacity:1;transform:none}
 }
+/* =========================================
+   BEYOND THE LIGHTS
+   DIWALI OPENING DESIGN
+========================================= */
+
+.btl-opening {
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 65px 22px 75px;
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 42%,
+      rgba(143, 72, 31, 0.28),
+      transparent 55%
+    ),
+    linear-gradient(
+      160deg,
+      #21130e,
+      #351b12 55%,
+      #1b100c
+    );
+
+  color: #f4dfb6;
+  font-family: Georgia, serif;
+}
+
+.btl-opening-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  width: 100%;
+  animation: btlAppear 1.5s ease both;
+}
+
+.btl-eyebrow {
+  color: #d7a85e;
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+}
+
+.btl-diya {
+  position: relative;
+  margin: 10px auto 25px;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btl-lamp {
+  font-size: 65px;
+  filter: drop-shadow(0 0 15px #d68a35);
+  animation: btlGlow 2s infinite alternate;
+}
+
+.btl-flame {
+  position: absolute;
+  top: 0;
+  left: 46px;
+
+  width: 13px;
+  height: 22px;
+  border-radius: 50% 50% 45% 45%;
+
+  background: #ffdc79;
+  box-shadow: 0 0 20px 8px rgba(255, 166, 48, .35);
+
+  animation: btlFlame 1s infinite alternate;
+}
+
+.btl-opening h1 {
+  font-size: clamp(48px, 12vw, 85px);
+  line-height: 1.15;
+  font-weight: 500;
+  margin: 0;
+  color: #f8e8c8;
+  letter-spacing: 3px;
+}
+
+.btl-opening h1 span {
+  color: #dba65d;
+}
+
+.btl-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  color: #dba65d;
+  margin: 25px 0;
+}
+
+.btl-divider span {
+  width: 55px;
+  height: 1px;
+  background: #bd8b4e;
+}
+
+.btl-subtitle {
+  font-size: clamp(17px, 4vw, 21px);
+  line-height: 1.9;
+  color: #f1d9b0;
+  margin: 0 auto 15px;
+}
+
+.btl-description {
+  color: #c6a77e;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.btl-start {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+
+  text-decoration: none;
+  padding: 14px 25px;
+
+  border: 1px solid #bd8b4e;
+  color: #f4dfb6;
+  font-size: 15px;
+  letter-spacing: 1px;
+
+  transition: .3s ease;
+}
+
+.btl-start:hover {
+  background: #bd8b4e;
+  color: #24140d;
+  transform: translateY(-3px);
+}
+
+.btl-start span {
+  font-size: 20px;
+  animation: btlArrow 1.2s infinite;
+}
+
+.btl-footer {
+  margin-top: 55px;
+  color: #a98253;
+  font-size: 10px;
+  letter-spacing: 5px;
+}
+
+.btl-alpana {
+  position: absolute;
+  color: rgba(216, 165, 91, .16);
+  font-size: 150px;
+  pointer-events: none;
+}
+
+.alpana-one {
+  top: 5%;
+  left: -35px;
+  animation: btlRotate 35s linear infinite;
+}
+
+.alpana-two {
+  bottom: 5%;
+  right: -35px;
+  animation: btlRotate 40s linear infinite reverse;
+}
+
+.btl-bottom-decoration {
+  position: absolute;
+  bottom: 20px;
+  color: #bd8b4e;
+  letter-spacing: 12px;
+  font-size: 13px;
+  opacity: .65;
+}
+
+/* ANIMATIONS */
+
+@keyframes btlAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes btlGlow {
+  from {
+    filter: drop-shadow(0 0 8px #d68a35);
+  }
+
+  to {
+    filter: drop-shadow(0 0 25px #ffb84d);
+  }
+}
+
+@keyframes btlFlame {
+  from {
+    transform: scale(.85) rotate(-5deg);
+  }
+
+  to {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes btlArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes btlRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 480px) {
+
+  .btl-opening {
+    padding: 55px 18px 70px;
+  }
+
+  .btl-alpana {
+    font-size: 105px;
+  }
+
+  .btl-opening h1 {
+    letter-spacing: 1px;
+  }
+
+  .btl-subtitle {
+    font-size: 17px;
+  }
+
+  .btl-start {
+    padding: 13px 19px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .btl-opening-content,
+  .btl-lamp,
+  .btl-flame,
+  .btl-alpana,
+  .btl-start span {
+    animation: none;
+  }
+}
+
